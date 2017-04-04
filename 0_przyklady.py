@@ -51,7 +51,7 @@ def wersja_3(fname):
     return struct
 
 def wersja_nltk(fname):
-    with open(fname) as fp:
+    with open(fname, encoding="utf8") as fp:
         raw_text = fp.read()
         # korzystamy z funkcji tokenizującej nltk -- naiwnej jeszcze, ale są lepsze
         word_tokens = word_tokenize(raw_text)
